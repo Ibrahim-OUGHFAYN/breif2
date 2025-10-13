@@ -99,7 +99,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -107,7 +107,7 @@ body {
 }
 
 .hero-bg {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-image: url("/placeholder.svg?height=1080&width=1920");
   background-size: cover;
@@ -129,9 +129,12 @@ body {
 .hero-container {
   position: relative;
   z-index: 10;
+  display: flex;
+
 }
 
 .hero-content {
+  position: relative;
   max-width: 800px;
   padding: 4rem 0;
 }
@@ -255,6 +258,12 @@ body {
   width: 1px;
   height: 40px;
   background: rgba(59, 130, 246, 0.2);
+}
+
+
+.hi{
+    width: 100vh;
+    height: 10vh;
 }
 
 /* Section Styles */
@@ -731,14 +740,14 @@ body {
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 3rem;
   margin-bottom: 3rem;
 }
 
 .footer-brand {
-  max-width: 400px;
+  max-width: 200rem;
 }
 
 .footer-tagline {
@@ -791,6 +800,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+.footer-links{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
 }
 
 .footer-link {
