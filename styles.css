@@ -68,6 +68,9 @@ body {
   gap: 2rem;
 }
 
+
+
+
 .nav-link {
   color: #a0a0a0;
   text-decoration: none;
@@ -130,6 +133,10 @@ body {
   position: relative;
   z-index: 10;
   display: flex;
+  align-items:center;
+  justify-content: space-between;
+  height:100vh;
+  flex-wrap:wrap;
 
 }
 
@@ -137,6 +144,7 @@ body {
   position: relative;
   max-width: 800px;
   padding: 4rem 0;
+  flex:1;
 }
 
 .hero-badge {
@@ -151,6 +159,23 @@ body {
   font-weight: 600;
   color: #60a5fa;
   margin-bottom: 2rem;
+}
+.hero-aside{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+.card-image{
+  padding:15px;
+  border-radius:15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 300px;
+}
+.card-image img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  display:block;
 }
 
 .badge-dot {
@@ -265,6 +290,78 @@ body {
     width: 100vh;
     height: 10vh;
 }
+
+
+
+/* my hero section */
+.my-hero-content{
+  padding-top:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  padding:150px 80px;
+}
+
+.card img{
+  width: 500px;
+  height:250px;
+  object-fit: cover;
+  /* display: block; */
+  border:1px solid gray;
+  border-radius:20px;
+}
+.left {
+  flex:1;
+}
+.badge{
+  display: inline-block;
+  font-size:20px;
+  font-weight:5px;
+  color:#60a5fa;
+  padding:15px;
+  border:1px solid blue;
+  border-radius:50px;
+  background-color:rgba(0, 136, 255, 0.1);
+  margin-bottom:15px;
+}
+
+.big-text{
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  padding-top:30px;
+}
+.comp{
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.desc{
+  font-size:1rem;
+  color:#f0f0f0;
+  padding-bottom:30px;
+  word-wrap: break-word; 
+}
+
+.btn-trn{
+  padding:15px;
+  background:#3b82f6;
+  border:1px solid #3b82f6;
+  font-size:1.2rem;
+  border-radius:30px;
+}
+.btn-trn:hover{
+  box-shadow:5px 10px 8px 2px #1b1bd2;
+}
+
 
 /* Section Styles */
 .section {
