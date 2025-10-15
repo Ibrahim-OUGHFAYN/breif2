@@ -378,22 +378,23 @@ body {
 .left a:hover {
   box-shadow: 0 0 30px rgb(251, 250, 251);
 } */
-.GOOGLE{
+.GOOGLE {
   position: relative;
-  color:#1c2b3e;
-  box-shadow:0 0 30px #e0e0e0;
-  text-decoration:none;
-  background:#8b5cf6;
-  padding:10px;
+  color: #1c2b3e;
+  box-shadow: 0 0 30px #e0e0e0;
+  text-decoration: none;
+  background: #8b5cf6;
+  padding: 10px;
   border: 1px solid red;
   font-size: larger;
   border-radius: 40px;
 }
-.GOOGLE:hover{
-  color:white;
+
+.GOOGLE:hover {
+  color: white;
   background-color: #0a0a0f;
   box-shadow: 0 1px 40px red;
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 
 }
 
@@ -870,6 +871,7 @@ body {
   border-top: 1px solid rgba(59, 130, 246, 0.2);
   padding: 4rem 0 2rem;
 }
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -917,27 +919,29 @@ body {
   height: 20px;
 }
 
-.faq{
+.faq {
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:20px;
-}
-.q{
-  width:80vw;
-  height:12vh;
-  padding:20px;
-  border:1px solid gray;
-  border-radius: 20px;
-}
-.v{
-  height:10vh;
+  gap: 20px;
 }
 
-.q-right{
-  width:24px;
+.q {
+  width: 80vw;
+  height: 12vh;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.v {
+  height: 10vh;
+}
+
+.q-right {
+  width: 24px;
   height: 24px;
 }
 
@@ -1033,4 +1037,47 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+.ins-form {
+  padding-top: 100px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 800px;
+  gap: 20px;
+}
+
+.ins-form h1 {
+  text-align: center;
+}
+
+.ins-form div {
+  display: grid;
+  gap: 5px;
+}
+
+.inpt {
+  border: 1px solid #60a5fa;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 0 80px;
+  color: white;
+}
+
+.upload>input {
+  visibility: hidden;
+  width: 0 ;
+  height: 0;
+}
+#ins-submit{
+  padding:20px;
+  border:1px solid purple;
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 30px;
 }
