@@ -68,9 +68,6 @@ body {
   gap: 2rem;
 }
 
-
-
-
 .nav-link {
   color: #a0a0a0;
   text-decoration: none;
@@ -121,10 +118,12 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg,
-      rgba(59, 130, 246, 0.1) 0%,
-      rgba(139, 92, 246, 0.1) 50%,
-      rgba(236, 72, 153, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 195, 0.1) 0%,
+    rgba(255, 0, 251, 0.1) 50%,
+    rgba(18, 180, 255, 0.1) 100%
+  );
 }
 
 .hero-container {
@@ -135,7 +134,6 @@ body {
   justify-content: space-between;
   height: 100vh;
   flex-wrap: wrap;
-
 }
 
 .hero-content {
@@ -188,7 +186,6 @@ body {
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     opacity: 1;
@@ -288,30 +285,28 @@ body {
   background: rgba(59, 130, 246, 0.2);
 }
 
-
 .hi {
   width: 100vh;
   height: 10vh;
 }
 
-
-
 /* my hero section */
 .my-hero-content {
+  height: 90vh;
   padding-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  padding: 150px 80px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
 .card img {
   width: 500px;
   height: 250px;
   object-fit: cover;
-  /* display: block; */
   border: 1px solid gray;
   border-radius: 20px;
 }
@@ -332,7 +327,6 @@ body {
   background-color: rgba(0, 136, 255, 0.1);
   margin-bottom: 15px;
   box-shadow: 0 0 100px rgb(101, 160, 255);
-
 }
 
 .big-text {
@@ -378,26 +372,23 @@ body {
 .left a:hover {
   box-shadow: 0 0 30px rgb(251, 250, 251);
 } */
-.GOOGLE{
+.GOOGLE {
   position: relative;
-  color:#1c2b3e;
-  box-shadow:0 0 30px #e0e0e0;
-  text-decoration:none;
-  background:#8b5cf6;
-  padding:10px;
-  border: 1px solid red;
-  font-size: larger;
-  border-radius: 40px;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  background-image: url(./public/Purple\ Minimalist\ Twitch\ Overlay.png);
+  background-size: cover;
+  font-size: medium;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+  background-position: center;
+  width: 200px;
+  height: 50px;
 }
-.GOOGLE:hover{
-  color:white;
-  background-color: #0a0a0f;
-  box-shadow: 0 1px 40px red;
-    transition: 0.3s ease;
-
-}
-
-
 /* Section Styles */
 .section {
   padding: 6rem 0;
@@ -791,7 +782,11 @@ body {
 }
 
 .newsletter-card {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(139, 92, 246, 0.1) 100%
+  );
   border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 1.5rem;
   padding: 3rem;
@@ -917,27 +912,36 @@ body {
   height: 20px;
 }
 
-.faq{
+.faq {
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
-.q{
-  width:80vw;
-  height:12vh;
-  padding:20px;
-  border:1px solid gray;
+.q {
+  position: relative;
+  width: 80vw;
+  height: 12vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid gray;
   border-radius: 20px;
+  transition:400ms ease;
 }
-.v{
-  height:10vh;
+.q:hover {
+  border: 2px solid rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 80px rgba(0, 191, 255,0.1);
+}
+.v {
+  height: 10vh;
 }
 
-.q-right{
-  width:24px;
+.q-right {
+  width: 24px;
   height: 24px;
 }
 
