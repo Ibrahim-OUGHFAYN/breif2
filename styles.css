@@ -118,12 +118,10 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 0, 195, 0.1) 0%,
-    rgba(255, 0, 251, 0.1) 50%,
-    rgba(18, 180, 255, 0.1) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 0, 195, 0.1) 0%,
+      rgba(255, 0, 251, 0.1) 50%,
+      rgba(18, 180, 255, 0.1) 100%);
 }
 
 .hero-container {
@@ -186,6 +184,7 @@ body {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
@@ -374,21 +373,20 @@ body {
 } */
 .GOOGLE {
   position: relative;
-  color:#1c2b3e;
-  box-shadow:0 0 30px #e0e0e0;
-  text-decoration:none;
-  background:#8b5cf6;
-  padding:10px;
-  border: 1px solid red;
-  font-size: larger;
-  border-radius: 40px;
-}
-.GOOGLE:hover{
-  color:white;
-  background-color: #0a0a0f;
-  box-shadow: 0 1px 40px red;
-    transition: 0.3s ease;
-
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  background-image: url(./public/Purple\ Minimalist\ Twitch\ Overlay.png);
+  background-size: cover;
+  font-size: medium;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+  background-position: center;
+  width: 200px;
+  height: 50px;
 }
 
 
@@ -785,11 +783,9 @@ body {
 }
 
 .newsletter-card {
-  background: linear-gradient(
-    135deg,
-    rgba(59, 130, 246, 0.1) 0%,
-    rgba(139, 92, 246, 0.1) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(59, 130, 246, 0.1) 0%,
+      rgba(139, 92, 246, 0.1) 100%);
   border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 1.5rem;
   padding: 3rem;
@@ -924,20 +920,25 @@ body {
   align-items: center;
   gap: 20px;
 }
-.q{
-  width:80vw;
-  height:12vh;
-  padding:20px;
-  border:1px solid gray;
+
+.q {
+  width: 80vw;
+  height: 12vh;
+  padding: 20px;
+  display: flex;
+  border: 1px solid gray;
   border-radius: 20px;
-  transition:400ms ease;
+  transition: 400ms ease;
+  justify-content: space-between;
 }
+
 .q:hover {
   border: 2px solid rgba(0, 123, 255, 0.5);
-  box-shadow: 0 0 80px rgba(0, 191, 255,0.1);
+  box-shadow: 0 0 80px rgba(0, 191, 255, 0.1);
 }
-.v{
-  height:10vh;
+
+.v {
+  height: 10vh;
 }
 
 .q-right {
@@ -1037,4 +1038,163 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
   }
+}
+
+.ins-form {
+  padding-top: 100px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 600px;
+  gap: 20px;
+}
+
+.ins-form h1 {
+  text-align: center;
+}
+
+.ins-form div {
+  display: grid;
+  gap: 5px;
+}
+
+.inpt {
+  border: 1px solid #60a5fa;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 80px 80px;
+  color: white;
+}
+
+/* .upload{
+  border:2px solid white ;
+} */
+
+.upload label {
+  border: 2px solid white;
+}
+
+.upload>input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+.upload>input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#ins-submit {
+  padding: 20px;
+  border: 1px solid #60a5fa;
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#ins-submit:hover {
+  background: linear-gradient(120deg, rgb(255, 95, 95), pink, rgb(120, 120, 255));
+}
+
+.profile {
+  padding-top: 120px;
+  padding-right: 15vw;
+  padding-left: 15vw;
+}
+
+.p-info {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #3b83f625;
+  padding-bottom: 30px;
+}
+
+.p-info-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ec489a7f;
+  border-radius: 80px;
+  box-shadow: 0 0 30px #3b83f63a;
+}
+
+.Victs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.Vict {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-info-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.vict-number {
+  font-family: "Orbitron", sans-serif;
+  color: #3b82f6;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.eq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ border-bottom:1px solid #3b83f63a;
+}
+
+.member img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: 1s ease-in-out;
+
+}
+
+.member h4 {
+  position: absolute;
+  opacity: 0;
+  padding: 85px;
+  font-size: larger;
+  transition: 0.5s ease-in-out;
+}
+
+.member:hover h4 {
+  position: absolute;
+  opacity: 1;
+}
+
+
+.member:hover img {
+  opacity: 0.2;
+  box-shadow: 0 0 80px #3b82f6;
+  transform: rotateY(180deg);}
+
+.title-eq {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
